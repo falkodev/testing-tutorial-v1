@@ -1,0 +1,32 @@
+{
+  "name": "node-api",
+  "version": "1.0.0",
+  "private": true,
+  "author": {
+    "name": "Anthony Tarlao",
+    "url": "https://github.com/falkodev"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "jest",
+    "test:watch": "jest --watchAll"
+  },
+  "dependencies": {
+    "express": "~4.16.0",
+    "morgan": "~1.9.0",
+    "nodemon": "^1.19.1"
+  },
+  "devDependencies": {
+    "jest": "^24.8.0",
+    "prettier": "^1.18.2",
+    "supertest": "^4.0.2"
+  },
+  "prettier": {
+    "printWidth": 100,
+    "semi": false,
+    "trailingComma": "all",
+    "singleQuote": true
+  }
+}
