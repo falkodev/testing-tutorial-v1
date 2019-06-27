@@ -10,8 +10,8 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "test": "jest",
-    "test:watch": "jest --watchAll"
+    "test": "jest --silent --coverage",
+    "test:watch": "jest --watch --silent --verbose"
   },
   "dependencies": {
     "express": "~4.16.0",

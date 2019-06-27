@@ -3,7 +3,7 @@ const express = require('express')
 const routes = require('./index')
 const app = express()
 const db = require('../../../infrastructure/db/mongoose')
-const repository = require('../../../infrastructure/repositories/user.js')
+const repository = require('../../../infrastructure/repositories/user')
 
 beforeAll(() => {
   db.connect('mongodb://localhost/testing-tutorial-test').catch(err => console.error(err))
@@ -19,7 +19,7 @@ afterAll(async () => {
 
 describe('Router', () => {
   describe('POST /user/create', () => {
-    test('create a user', async () => {
+    it('creates a user', async () => {
       const res = await request(app)
         .post('/user/create')
         .send({
