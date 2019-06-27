@@ -15,4 +15,4 @@ In another terminal, run `npm run test` (or `npm run test:watch` to run test eve
 
 ## Operations
 
-For each entity, create integration tests for routes, and unit tests for controllers (get/create/update/delete)
+For each entity, create integration tests for routes, and unit tests for controllers (get/create/update/delete).
