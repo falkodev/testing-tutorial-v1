@@ -23,9 +23,9 @@ describe('Router', () => {
       const res = await request(app)
         .post('/user/create')
         .send({
-          firstName: 'Anthony',
-          lastName: 'Tarlao',
-          userName: 'atarlao',
+          firstName: 'Bob',
+          lastName: 'Smith',
+          userName: 'bsmith',
           password: 'test',
         })
         .set('Content-Type', 'application/json')
