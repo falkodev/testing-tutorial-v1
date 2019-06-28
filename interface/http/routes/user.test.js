@@ -67,5 +67,24 @@ describe('Router', () => {
       expect(res.status).toBe(200)
       expect(res.text).toBe('ok')
     })
+
+    it('should return an error if userName is duplicated', async () => {
+      // when
+      const res = await request(app)
+        .post('/user/create')
+        .send({
+          firstName: 'Bob',
+          userName: 'bsmith',
+          password: 'test',
+        })
+        .set('Content-Type', 'application/json')
+        .set('Accept', 'application/json')
+
+      //then
+      expect(res.status).toBe(400)
+      expect(res.text).toBe(
+        'MongoError: E11000 duplicate key error collection: testing-tutorial-test.users index: userName_1 dup key: { : "bsmith" }',
+      )
+    })
   })
 })
