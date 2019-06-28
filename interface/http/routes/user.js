@@ -11,4 +11,13 @@ router.post('/create', async (req, res, next) => {
   }
 })
 
+router.get('/:userName', async (req, res, next) => {
+  try {
+    const user = await userService.get(req.params.userName)
+    res.send(user)
+  } catch (error) {
+    res.status(400).send(error.message)
+  }
+})
+
 module.exports = router

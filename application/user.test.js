@@ -13,7 +13,7 @@ afterAll(async () => {
 
 describe('Application', () => {
   describe('user', () => {
-    it('combines a repository and a domaine to create a user', async () => {
+    it('combines a repository and a domain to create a user', async () => {
       const res = await userApplication.create({
         firstName: 'Bob',
         lastName: 'Smith',

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1561648266179" clover="3.2.0">
-  <project timestamp="1561648266179" name="All files">
-    <metrics statements="48" coveredstatements="44" conditionals="2" coveredconditionals="1" methods="11" coveredmethods="11" elements="61" coveredelements="56" complexity="0" loc="48" ncloc="48" packages="6" files="7" classes="7"/>
+<coverage generated="1561716614039" clover="3.2.0">
+  <project timestamp="1561716614039" name="All files">
+    <metrics statements="48" coveredstatements="46" conditionals="2" coveredconditionals="1" methods="11" coveredmethods="11" elements="61" coveredelements="58" complexity="0" loc="48" ncloc="48" packages="6" files="7" classes="7"/>
     <package name="application">
       <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="user.js" path="/Users/tony/hb-app/node-api/application/user.js">
@@ -44,25 +44,25 @@
       <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="user.js" path="/Users/tony/hb-app/node-api/infrastructure/db/models/user.js">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="3" type="stmt"/>
-        <line num="3" count="3" type="stmt"/>
-        <line num="23" count="3" type="stmt"/>
-        <line num="24" count="3" type="stmt"/>
+        <line num="1" count="4" type="stmt"/>
+        <line num="3" count="4" type="stmt"/>
+        <line num="23" count="4" type="stmt"/>
+        <line num="24" count="4" type="stmt"/>
       </file>
     </package>
     <package name="infrastructure.repositories">
-      <metrics statements="9" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
       <file name="user.js" path="/Users/tony/hb-app/node-api/infrastructure/repositories/user.js">
-        <metrics statements="9" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-        <line num="1" count="3" type="stmt"/>
-        <line num="3" count="3" type="stmt"/>
-        <line num="4" count="2" type="stmt"/>
-        <line num="5" count="2" type="stmt"/>
+        <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="1" count="4" type="stmt"/>
+        <line num="3" count="4" type="stmt"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
         <line num="6" count="2" type="stmt"/>
-        <line num="8" count="0" type="stmt"/>
-        <line num="9" count="0" type="stmt"/>
-        <line num="13" count="3" type="stmt"/>
-        <line num="15" count="3" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="13" count="4" type="stmt"/>
+        <line num="15" count="4" type="stmt"/>
       </file>
     </package>
     <package name="interface.http.routes">
