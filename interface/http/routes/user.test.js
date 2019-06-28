@@ -86,5 +86,13 @@ describe('Router', () => {
         'MongoError: E11000 duplicate key error collection: testing-tutorial-test.users index: userName_1 dup key: { : "bsmith" }',
       )
     })
+
+    it('should return an error if user does not exist', async () => {
+      // when
+      const res = await request(app).get('/user/aaaaaaaaaaa')
+
+      //then
+      expect(res.status).toBe(400)
+    })
   })
 })

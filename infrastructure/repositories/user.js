@@ -13,7 +13,11 @@ const create = async user => {
 const get = async userName => {
   try {
     const user = await User.findOne({ userName })
-    return user
+    if (user) {
+      return user
+    } else {
+      throw new Error('User does not exist')
+    }
   } catch (error) {
     console.error(error.message)
     throw new Error(error)
