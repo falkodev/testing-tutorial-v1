@@ -14,7 +14,7 @@
     "test:watch": "jest --watch --silent --verbose"
   },
   "dependencies": {
-    "express": "~4.16.0",
+    "express": "~4.18.2",
     "mongoose": "^5.6.1",
     "morgan": "~1.9.0",
     "nodemon": "^1.19.1"
